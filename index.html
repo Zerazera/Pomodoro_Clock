@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+
+  <head>
+    <title>Pomodoro Clock</title>
+    <meta name='description' content='Having trouble with productivity? Using a time management technique developed in Italy in the late 1980s, the Pomodoro method is guaranteed to boost your productivity. Now includes a money back guarantee!' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset='UTF-8' />
+    <meta name='author' content='Samuel Cupidon' />
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='./css/main.css' />
+  </head>
+
+  <body>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <audio loop id='alarmSound'>
+            <source src='./sounds/Alarm.mp3' type='audio/mp3'>
+        </audio>
+        <div class='col-xs-12 col-sm-6 col-sm-offset-4 col-md-4 col-md-offset-3' id='pomodoroClock'>
+          <span id='alarmSound'></span>
+          <br>
+            <div class='col-xs-12 form-control' id='ledIndicators'>
+              <div class='col-xs-4'>
+                <span class='led' id='sessionIndicator'></span>
+                <br>
+                <span class='ledLabel'>Session</span>
+              </div><!--col-xs-4-->
+              <div class='col-xs-4'>
+                <span class='led' id='shortBreakIndicator'></span>
+                <br>
+                <span class='ledLabel'>Short Break</span>
+              </div><!--col-xs-4-->
+              <div class='col-xs-4'>
+              <span class='led' id='longBreakIndicator'></span>
+              <br>
+              <span class='ledLabel'>Long Break</span>
+              </div>
+            </div><!--col-xs-12-->
+              <br>
+        <div id='sessionDisplay'>
+          <span id='negativeSign'></span><span id='timerHours'>00</span>:<span id='timerMinutes'>00</span>:<span id='timerSeconds'>00</span>
+          <span id='pomodorosCount'>00</span>
+        </div><!--#sessionDisplay-->
+            <div class='displayText'>
+              <small><span class='boldLabel' id='hrsLabel'>Hrs</span>
+                <span class='boldLabel' id='minsLabel'>Mins</span>
+                <span class='boldLabel' id='secsLabel'>Secs</span>
+                <span class='boldLabel' id='pomodorosLabel'>Pomodoros</span></small>
+            </div>
+            <br>
+            <button data-toggle='tooltip' title='Toggle set session/short break/long break' class='btn btn-info topButtons' id='setTimersButton'><span class='glyphicon glyphicon-cog'></span></button><!--
+            --><button data-toggle='tooltip' title='Toggle set hours/minutes/seconds/pomodoros' class='btn btn-info topButtons' id='setHMSPToggle'><span class='glyphicon glyphicon-time'></span></button><!--
+            --><button data-toggle='tooltip' title='Hours/Minutes/Seconds/Pomodoros -1' class='btn btn-default topButtons' id='setHMSPDown'><span class='glyphicon glyphicon-arrow-down'></span></button><!--
+            --><button data-toggle='tooltip' title='Hours/Minutes/Seconds/Pomodoros +1' class='btn btn-default topButtons' id='setHMSPUp'><span class='glyphicon glyphicon-arrow-up'></span></button><!--
+            --><button data-toggle='tooltip' title='Save changes' class='btn btn-success topButtons' id='saveChanges'><span class='glyphicon glyphicon-ok'></span></button><!--
+            --><button data-toggle='tooltip' title='Discard changes' class='btn btn-danger topButtons' id='discardChanges'><span class='glyphicon glyphicon-remove'></span></button><!--
+            --><button class='btn btn-success bottomButtons' data-toggle='tooltip' title='Start timer' id='playButton'><span class='glyphicon glyphicon-play'></span></button><!--
+            --><button data-toggle='tooltip' title='Pause/unpause timer' class='btn btn-warning bottomButtons' id='pauseButton'><span class='glyphicon glyphicon-pause'></span></button><!--
+            --><button data-toggle='tooltip' title='Stop and reset timer' class='btn btn-danger bottomButtons' id='stopButton'><span class='glyphicon glyphicon-stop'></span></button><!--
+            --><button data-toggle='tooltip' title='Silence alarm' class='btn btn-primary bottomButtons' id='alarmButton'><span class='glyphicon glyphicon-bell'></span></button>
+        </div><!--#pomodoroClock-->
+      </div><!--row-fluid-->
+    </div><!--container-fluid-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='./js/main.js'></script>
+  </body>
+</html>

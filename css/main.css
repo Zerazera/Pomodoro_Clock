@@ -1,0 +1,148 @@
+body {
+  background-image:url('../images/crossing-the-finish-line.jpg');
+  background-size:cover;
+  background-position:0 20%;
+  background-repeat:no-repeat;
+}
+
+#pomodoroClock {
+  max-width:290px;
+  margin-top:10%;
+  background-color:#DCDCDC;
+  border-radius:5%;
+  border-style:outset;
+  padding-bottom:25px;
+}
+
+#sessionIndicator {
+  margin-left:13px;
+}
+
+#shortBreakIndicator {
+  margin-left:21px;
+}
+
+#longBreakIndicator {
+  margin-left:22px;
+}
+
+.ledLabel {
+  font-weight:bold;
+  font-size:.8em;
+  white-space:nowrap;
+  cursor:default;
+}
+
+#sessionDisplay {
+  background-color:#000000;
+  max-width:400px;
+  font-family:'Orbitron', sans-serif;
+  font-size:25px;
+  color:lightgreen;
+  border:1px inset lightgreen;
+  cursor:default;
+  text-align:right;
+}
+
+#setLabel {
+  margin-bottom:-10px;
+}
+
+.led {
+  border-radius:100%;
+  border:1px outset #D9534F;
+  padding:0 8px;
+  background-color:#d9534f;
+  color:black;
+}
+
+button {
+  outline:none !important;
+}
+
+#sessionTimerLabel {
+  margin-left:10px;;
+}
+
+#breakTimerLabel {
+  margin-left:50px;
+}
+
+.displayText {
+  cursor:default;
+}
+
+#hrsLabel {
+  margin-left:30px;
+  font-weight:bold;
+}
+
+.boldLabel {
+  font-weight:bold
+}
+
+#minsLabel {
+  margin-left:20px;
+}
+
+#secsLabel {
+  margin-left:13px;
+}
+
+#pomodorosLabel {
+  margin-left:37px;
+}
+
+#ledIndicators {
+  margin-top:10px;
+  border-bottom:none;
+  border-radius:0;
+  padding-bottom:40px;
+}
+
+#pomodorosCount {
+  margin-left:42px;
+  margin-right:10px;
+}
+
+.topButtons {
+  padding-left:11px;
+  padding-right:11px;
+  margin-bottom:5px;
+  margin-right:4px;
+}
+
+.bottomButtons {
+  padding-left:21px;
+  padding-right:21px;
+  margin-right:5px;
+}
+
+.ledIdle {
+  background-color:#000000;
+  border-color:#000000;
+}
+
+.ledSet {
+  background-color:#5BC0DE;
+  border-color:#5BC0DE;
+}
+
+.ledPlay {
+  background-color:#5CB85C;
+  border-color:#5CB85C;
+}
+
+.ledPause {
+  background-color:#F0AD4E;
+  border-color:#F0AD4E;
+}
+
+.ledAlarm {
+  background-color:#337AB7;
+  border-color:#337AB7;
+}
+
+.hideText {
+  color:#000000;
+}
